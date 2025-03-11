@@ -1,60 +1,131 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <div id="header">
-  <h1>Hi, I'm Alexis Yew!</h1>
-    <h2>Skills</h2>
-    <p>
-        <ul>
-        <li>Languages: C/C++, Python, Java, Bash</li>
-        <li>Technologies: Azure, Git, MatLab</li>
-        </ul>
-    </p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <h2>Education</h2>
-  <p>
-    Simon Fraser University (January 2023 - Present) <br> B.A.Sc. Information Systems
-    in Business Administration and Computing Science
-  </p>
+    <title>Cloud Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="left">
+        <a href="/">AY.</a>
+      </div>
 
-  <h2>Experience</h2>
-  <p>
-    CaseIT (July 2024 - April 2025) <br> Project Manager
-    <ul>
-        <li> Coordinated operations for
-        PIVOT 2025, the premier business technology case competition in British
-        Columbia with over 100 attendees including students and industry
-        professionals </li>
-        <li> Collaborated with the SAP team to create a case study on SAP
-        Concur, a travel and expense management SaaS platform </li>
-        <li> Managed a team of 4, spearheaded outreach raising $2000 in sponsorships and devised the content
-        marketing strategy increasing engagement by 279%</li>
-    </ul>
-  </p>
+      <div class="right">
+        <a
+          href="mailto:alexisyew123@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
 
-  <h2>Projects</h2>
-    <p>
-    Cloud Resume | Python, Azure, Terraform (March 2025) <br> 
-     <ul>
-        <li>Developed and deployed a serverless personal website using Azure Static Web Apps and HTML/CSS/JavaScript. </li>
-        <li>Implemented a visitor counter API using Azure Functions, Cosmos DB, and Python.</li>
-        <li>Automated infrastructure provisioning using Terraform and managed CI/CD with GitHub Actions.</li>
-     </ul>
-       </p>
-  <p>
-    CaseIT 2025 Website | TypeScript, Next.js (January 2025) <br> 
-    <ul>
-        <li>Used TypeScript and Next.js to develop new features and
-        update content on the CaseIT 2025 and PIVOT 2025 websites</li>
-        <li>Collaborated with web development and marketing teams to design elements in Figma</li>
-    </ul>
-        
-  </p>
-</div>
+        <a
+          href="https://www.linkedin.com/in/alexis-yew-a58364306/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a
+          href="http://github.com/a-yew"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <!-- Section 1: Hero -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hello, I'm Alexis.</h2>
+          <p>
+            I'm an undergraduate student at Simon Fraser University studying
+            Computer Science and Business. I'm currently focusing on building
+            projects using Cloud Technologies and DevOps principles. My goal is
+            to bridge the gap between business strategy using technical skills,
+            and to always look for opportunities to grow.
+          </p>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
 
-</head>
+            <a href="#projects">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Projects</span>
+            </a>
 
+            <a href="images/resume.pdf">
+              <i class="fa-solid fa-file"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+        <div class="headshot">
+          <img src="images/headshot.webp" alt="alexis-headshot" />
+        </div>
+      </section>
+
+      <!-- Section 2: Skills -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="images/cpp-logo.webp" alt="c++ logo" />
+            <span>C++</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/python-logo.webp" alt="python logo" />
+            <span>Python</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/azure-logo.webp" alt="azure logo" />
+            <span>Azure</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/bash-logo.webp" alt="bash logo" />
+            <span>Bash</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="javascript logo" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Experience  -->
+      <section id="experience"></section>
+
+      <!-- Section 4: Projects    -->
+      <section id="projects"></section>
+    </main>
+  </body>
 </html>
